@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONI HK Jewellery</title>
+    <style>
+        * {margin:0;padding:0;box-sizing:border-box;font-family:system-ui, -apple-system, sans-serif;}
+        body {background:#ffffff;color:#222;line-height:1.6;}
+        .hero {
+            height: 80vh;
+            background: url('https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80') center/cover no-repeat;
+            display:flex;align-items:center;justify-content:center;
+            text-align:center;color:white;
+        }
+        .hero-text h1 {font-size:28px;margin-bottom:12px;}
+        .hero-text p {font-size:16px;max-width:600px;}
+        .btn {
+            display:inline-block;
+            padding:12px 28px;
+            background:#c8a87c;
+            color:white;text-decoration:none;
+            margin-top:20px;
+            border-radius:2px;border:none;cursor:pointer;
+        }
+        .container {max-width:1200px;margin:0 auto;padding:60px 20px;}
+        h2 {text-align:center;margin-bottom:40px;font-weight:400;}
+        .cat-grid {
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+            gap:30px;
+        }
+        .cat-card {text-align:center;}
+        .cat-card img {width:100%;height:320px;object-fit:cover;margin-bottom:14px;}
+        .brand-block {background:#f8f6f3;padding:70px 20px;text-align:center;}
+        .logo-wall {
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap:32px;
+            align-items:center;
+            margin:50px 0;
+        }
+        .logo-wall div {font-size:24px;font-weight:bold;opacity:0.7;}
+        .service-grid {
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap:30px;
+            margin-top:40px;
+        }
+        .service-item {text-align:center;}
+        .subscribe-box {
+            background:#f3f0ec;
+            padding:50px 20px;
+            text-align:center;
+        }
+        input.email-input {
+            padding:12px 16px;
+            width:min(340px, 90%);
+            margin-right:8px;margin-bottom:10px;
+            border:1px solid #ddd;
+        }
+        .popup-overlay {
+            position:fixed;inset:0;background:rgba(0,0,0,0.5);
+            display:none;align-items:center;justify-content:center;
+            z-index:999;
+        }
+        .popup {
+            background:white;padding:40px 30px;max-width:460px;width:90%;
+            text-align:center;
+        }
+        .close-popup {
+            margin-top:16px;cursor:pointer;color:#888;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>The Serendipity & Solitude Collection</h1>
+            <p>Every ring holds a quiet conversation with yourself</p>
+            <a href="#shop" class="btn">Shop now</a>
+        </div>
+    </section>
+
+    <section id="shop" class="container">
+        <h2>Sterling Silver Jewellery</h2>
+        <div class="cat-grid">
+            <div class="cat-card">
+                <img alt="Necklace" src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80">
+                <h3>Sterling Silver Necklace</h3>
+                <p>HK$1080</p>
+                <!-- 👉 之後替換成你的Stripe付款連結 -->
+                <a href="https://buy.stripe.com/xxxxxxx" target="_blank" class="btn">Buy Now</a>
+            </div>
+            <div class="cat-card">
+                <img alt="Rings" src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80">
+                <h3>Sterling Silver Rings</h3>
+                <p>HK$980</p>
+                <a href="https://buy.stripe.com/xxxxxxx" target="_blank" class="btn">Buy Now</a>
+            </div>
+            <div class="cat-card">
+                <img alt="Earrings" src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80">
+                <h3>Sterling Silver Earrings</h3>
+                <p>HK$880</p>
+                <a href="https://buy.stripe.com/xxxxxxx" target="_blank" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="brand-block">
+        <div class="container">
+            <h2>AFFORDABLE LUXURY JEWELLERY BRAND</h2>
+            <p style="max-width:600px;margin:0 auto;">Love yourself from now on and be blissful.<br>Glitter that rivals diamonds will always shine with confidence</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Talk About Us</h2>
+        <div class="logo-wall">
+            <div>BAZAAR</div>
+            <div>ELLE</div>
+            <div>TatlerAsia</div>
+            <div>POPBEE</div>
+            <div>JESSICA</div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Our Promise</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h4>5‑Year Warranty</h4>
+                <p>Free maintenance: repair loose stones & cleaning</p>
+            </div>
+            <div class="service-item">
+                <h4>Free Shipping</h4>
+                <p>Worldwide free shipping for 2 items or above</p>
+            </div>
+            <div class="service-item">
+                <h4>Premium Materials</h4>
+                <p>18K gold vermeil & diamond simulants</p>
+            </div>
+            <div class="service-item">
+                <h4>Over A Million Pieces Sold</h4>
+                <p>A definite choice you can trust!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe-box">
+        <h3>The Best Way to Treat Yourself.</h3>
+        <p style="margin:14px 0;">Sign up with your email to unlock HK$50 OFF your first order.</p>
+        <!-- 👉 之後替換成 Formspree 表單連結 -->
+        <form action="https://formspree.io/f/xxxxxxx" method="POST">
+            <input class="email-input" name="email" placeholder="Enter your email" type="email" required>
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </section>
+
+    <div id="popup1" class="popup-overlay">
+        <div class="popup">
+            <h3>Get HK$50 off your first order!</h3>
+            <p style="margin:16px 0;">Subscribe to our newsletter for exclusive offers</p>
+            <form action="https://formspree.io/f/xxxxxxx" method="POST">
+                <input class="email-input" name="email" placeholder="Your email address" type="email" required>
+                <br>
+                <button type="submit" class="btn">Claim discount</button>
+            </form>
+            <div class="close-popup" onclick="closePopup()">Close</div>
+        </div>
+    </div>
+
+    <script>
+        const overlay = document.getElementById('popup1');
+        window.addEventListener('load', function(){
+            overlay.style.display = 'flex';
+        })
+        function closePopup(){
+            overlay.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
